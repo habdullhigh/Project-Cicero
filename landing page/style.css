@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    ;
+    box-sizing: border-box;
+}
+html{
+    font-size: 10px;
+}
+
+
+.section-4{
+    display: flex;
+    background-color: yellow;
+    width: 98vw;
+    padding: 2rem 2rem 1rem 5rem;
+    justify-content: space-between;
+    position: relative;
+}
+.teachers{
+    flex-basis: 40%;
+}
+.teachers-flex{
+    margin-top: 5rem;
+    position: relative;
+    justify-self: flex-end;
+    
+}
+.flex-{
+    display: flex;
+    position: relative;
+
+}
+.flex->div{
+    background-color:white;
+    border-radius: 1rem;
+    display: flex;
+    padding: 2rem 1.5rem 2rem 2rem;
+    margin: 1rem 2rem;
+}
+.flex- >div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.flex- div div{
+    display: flex;
+    flex-direction: row;
+}
+.flex- div div div{
+    display: flex;
+    flex-direction: column;
+}
+.flex- div div div div{
+    flex-direction: row;
+}
+.flex2{
+    /* position: absolute; */
+    left: 4rem;
+
+}
+.inner{
+    display: flex;
+    background-color: aqua;
+    width: 100%;
+}
+.inner p{
+    margin-right:2rem;
+}
+.inner ul{
+    padding: 0
+}
+button{
+    outline: none;
+    border: none;
+    padding: .5rem 2em;
+}
+.flex2 .end{
+    border-radius: 1rem 0rem 0rem 1rem;
+
+}

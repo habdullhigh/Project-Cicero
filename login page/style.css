@@ -1,0 +1,92 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 10px;
+}
+
+.login-body{
+    display: flex;
+    width: 90%;
+    position: relative;
+    margin-top: 2rem;
+    justify-content: center;
+    margin: 0 auto;
+
+}
+.login-body a{
+    text-decoration: none;
+}
+.side-note{
+    background-color: #212529;
+    padding: 3rem 1rem;
+    color: white;
+    flex-basis: 40%;
+}
+.side-note .p-right{
+    margin: 1rem 0;
+    text-align: right;
+
+}
+.login-form{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0,0, 0, 0.1);
+    align-items: center;
+    padding: 2rem 2rem 0rem 2rem;
+    flex-basis: 40%;
+}
+
+.login-body input, p{
+    margin: 1rem ;
+}
+.google-login{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid rgb(75, 162, 233);
+    border-radius: 2rem;
+    padding: .5em 2em;
+    width: 100%;
+}
+.login{
+    background-color: rgb(45, 93, 197);
+    border-radius: 2rem;
+    padding: .5rem 3em;
+    color: white;
+}
+.input{
+    width: 100%;
+    padding: 1rem;
+    border-radius: 1rem ;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    padding: none;
+}
+
+@media (max-width:700px){
+    .side-note{
+        display: none;
+    }
+    .login-form{
+        flex-basis: 80vw;
+        padding: 2.5rem 4em .5rem 4em
+    }
+    
+}
+@media (max-width: 450px){
+    .login-body{
+        width: 100%;
+    }
+    .login-form{
+        flex-basis: 95vw;
+        padding: 2.5rem 1.5rem .5rem 1rem;
+    }
+}
