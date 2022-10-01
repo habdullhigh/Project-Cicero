@@ -7,18 +7,22 @@
 html{
     font-size: 10px;
 }
+body{
+    overflow-x: hidden;
+}
 
 
 .section-4{
     display: flex;
     background-color: #fede48;
-    width: 98vw;
+    width: 99vw;
     padding: 2rem 2rem 1rem 5rem;
     justify-content: space-between;
     position: relative;
 }
 .teachers{
     flex-basis: 35%;
+
 }
 .teachers  span{
     font-weight: 700;
@@ -48,18 +52,18 @@ html{
 .teachers-flex{
     margin-top: 5rem;
     position: relative;
-    flex-basis: 70%;
+    flex-basis: 65%;
 }
 .flex-{
     display: flex;
     position: relative;
-
+    align-self: flex-end;
 }
 .flex->div{
     background-color:white;
     border-radius: 1rem;
     display: flex;
-    padding: 2rem 1.5rem 2rem 2rem;
+    padding: 2rem 1.5rem 2rem 1.5rem;
     margin: 1rem 2rem;
 }
 .flex- >div{
@@ -87,7 +91,7 @@ html{
 .flex- div div div div{
     flex-direction: row;
     align-items: center;
-    
+
 }
 .flex2{
     /* position: absolute; */
@@ -101,6 +105,7 @@ html{
     width: auto;
     height: auto;
     align-items: center;
+    margin-bottom: 1rem;
 }
 .inner code{
     width: 5px; 
@@ -115,10 +120,6 @@ button{
     outline: none;
     border: none;
 }
-.flex2 .end{
-    border-radius: 1rem 0rem 0rem 1rem;
-    margin-right: 0;
-}
 .button1{
     border-radius: 3rem;
     background-color: #0d5be9;
@@ -126,4 +127,31 @@ button{
     font-weight: 500;
     font-size: 1.2rem;
     padding: 1.4rem 6rem;
+}
+
+
+@media (max-width:930px){
+    .flex- >div{
+        padding: 2rem .5rem;
+    } 
+}
+@media (max-width:865px){
+    .teachers-flex{
+        flex-basis: 75%;
+    }
+}
+@media (max-width:845px){    
+    .teachers{
+        flex-basis: 25%;
+    } 
+} 
+@media (max-width:760px) {
+    .section-4{ 
+        padding-left: 0;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .teachers-flex{
+        margin-bottom: 2rem;
+    }
 }
