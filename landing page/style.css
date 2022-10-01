@@ -1,6 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
 *{
+    font-family: 'Montserrat', sans-serif;
     margin: 0;
-    ;
     box-sizing: border-box;
 }
 html{
@@ -10,20 +11,44 @@ html{
 
 .section-4{
     display: flex;
-    background-color: yellow;
+    background-color: #fede48;
     width: 98vw;
     padding: 2rem 2rem 1rem 5rem;
     justify-content: space-between;
     position: relative;
 }
 .teachers{
-    flex-basis: 40%;
+    flex-basis: 35%;
+}
+.teachers  span{
+    font-weight: 700;
+    font-size: 1.3rem;
+    color:#b02900
+}
+.teachers h3{
+    font-size: 2.8rem;
+    font-weight: 500;
+    color: #0a0a0a;
+}
+.teachers p{
+    font-weight: 400;
+    font-size: 1.6rem;
+    color: #595959;
+    padding: 2rem 0;
+
+}
+.teachers .button2{
+    font-size: 1.4rem;
+    color: white;
+    font-weight: 500;
+    background-color:#0a0a0a;
+    border-radius: 100px;
+    padding: 1.4rem 5rem;
 }
 .teachers-flex{
     margin-top: 5rem;
     position: relative;
-    justify-self: flex-end;
-    
+    flex-basis: 70%;
 }
 .flex-{
     display: flex;
@@ -46,35 +71,59 @@ html{
     display: flex;
     flex-direction: row;
 }
+.flex- div div img{
+    height: 4rem;
+    width: 4rem;
+}
 .flex- div div div{
     display: flex;
     flex-direction: column;
 }
+.flex- div div div h4{
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: #212529;
+}
 .flex- div div div div{
     flex-direction: row;
+    align-items: center;
+    
 }
 .flex2{
     /* position: absolute; */
     left: 4rem;
-
 }
 .inner{
     display: flex;
-    background-color: aqua;
-    width: 100%;
+    color: #212529;
+    font-size: 1.3rem;
+    font-weight: 400 ;
+    width: auto;
+    height: auto;
+    align-items: center;
 }
-.inner p{
-    margin-right:2rem;
-}
-.inner ul{
-    padding: 0
+.inner code{
+    width: 5px; 
+    height: 5px;
+    background-color: black; 
+    display: block; 
+    border-radius: 50%; 
+    margin-right: 5px; 
+    margin-left: 5px;
 }
 button{
     outline: none;
     border: none;
-    padding: .5rem 2em;
 }
 .flex2 .end{
     border-radius: 1rem 0rem 0rem 1rem;
-
+    margin-right: 0;
+}
+.button1{
+    border-radius: 3rem;
+    background-color: #0d5be9;
+    color: white;
+    font-weight: 500;
+    font-size: 1.2rem;
+    padding: 1.4rem 6rem;
 }
