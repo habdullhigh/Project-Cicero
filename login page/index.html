@@ -5,51 +5,49 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>login</title>
+    <link rel="icon" href="../images/cicero icon.ico">
     <link rel="stylesheet" href="style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://kit.fontawesome.com/2c1a4fe683.js" crossorigin="anonymous"></script>    
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
-        <div class="container">
-            <a href="#" class="navbar-brand">cicero</a>
-
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-            data-bs-target="#dropdown"
-            aria-expanded="false"
-            aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="dropdown">
-                <ul class="navbar-nav ms-auto" >
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">Search</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">Categories</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">Teachers</a>            
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">Students </a>            
-                    </li>
-                    <li class="nav-item">
-                        <button><a href="#" class="nav-link">Register</a></button>            
-                    </li>
-                </ul>
-            </div>       
+    <nav data-aos="slide-right">
+        <div class="wrapper"  data-aos="fade-right" data-aos-duration="1500">
+            <label class="logo"><a href="../landing page/index.html" >Cicero</a></label>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+            <ul class="nav-links" data-aos="fade-right">
+                <li><a href="#">Search</a></li>
+                <li><a href="#">Categories
+                    <img src="../images/dropdown icon.png" alt="icon" style="height: 10px; width:10px;"></a>
+                    <div class="drop-menu" id="dropdown">
+                        <img src="../images/side dots.jpg" alt="">
+                        <img src="../images/dots.png" alt="">
+                        <img src="../images/x icon.png" alt="">
+                        <label for="dropdown">
+                            <img src="../images/x icon.png" alt="x">
+                        </label><img src="../images/dots.png" alt=""> 
+                    </div>
+                </li>
+                <li><a href="#">Teachers</a></li>
+                <li><a href="#">Students</a></li>
+                <button class="nav-button">
+                    <a href="../sign up page/index.html" class="reg-link">Register</a>
+                </button>
+            </ul>
+            
         </div>
     </nav>
-    <section class="login-body">
-        <div class="side-note">
-            <p>The beautiful thing about education is no one can take it from you.</p>
-            <p class="p-right">B.B King</p>
-            <p>Everythong you need is at your disposal, your journey begins the moment you sign up.</p>
+    <section class="login-body" data-aos="zoom-in">
+        <div class="side-note" data-aos="slide-up">
+            <p data-aos="slide-left">The beautiful thing about education is no one can take it from you.</p>
+            <p class="p-right" data-aos="slide-right">B.B King</p>
+            <p data-aos="fade-in">Everything you need is at your disposal, your journey begins the moment you sign up.</p>
 
         </div>
-        <div class="login-form">
+        <div class="login-form" data-aos="slide-right">
             <div class="google-login">
                 <img src="../images/google icon.png" alt="google icon">
                 <a href="#">Login with Google</a>
@@ -60,11 +58,15 @@
                 <br>
                 <input type="password" class="input" id="password_" placeholder="Password" required><br>
                 <br>
-                <input type="submit" value="Login" class="login">
+                <input type="submit" value="Login" class="login blue-face">
             </form>
             <p class="register-link">Are you new here? <a href="../sign up page/index.html">Register</a></p>
         </div>
     </section>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
-</body>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+      duration:2000;
+      easing: 'ease-in-out';
+    </script>
 </html>

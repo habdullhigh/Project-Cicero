@@ -8,38 +8,393 @@ html{
     font-size: 10px;
 }
 body{
+    overflow-x:hidden;
+}
+section{
     overflow-x: hidden;
 }
+a{
+    text-decoration:none;
+}
+header
+{
+    display: flex;
+    width: 100vw;
+    margin:2 auto;
+    padding: 2rem 5rem;
+    background: #f3f3f3;
+}
+nav{
+    width: 100%;
+    height: 6.5rem;
+}
+.reg-link{
+    color: white;
+}
+.logo a{
+    color: #0056b3;
+    text-decoration: none;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 6.5rem;
 
+}
+.nav-button{
+    border-radius: 3rem;
+    background-color: #0d5be9;
+    color: white;
+    font-weight: 500;
+    font-size: 1.2rem;
+    padding: 1.2rem 5.5rem;
+}
+.wrapper{
+    width: 95%;
+    height: 4.5rem;
+    margin: 0 auto;
+    z-index: 1000;
+}
+.wrapper .nav-links{
+    float: right;
+    
+}
+.nav-links li{
+    list-style: none;
+    display: inline-block;
+    line-height: 6.5rem;
+}
+.nav-links li a{
+    color: #1f1f1f;
+    font-size: 1.6rem;
+    font-weight: 500;
+    padding: 1rem 1.5rem;
+    text-decoration: none;
+    transition: all 0.5s ease;
+}
+.nav-links .drop-menu{
+    background-color: #fff;
+    width: 95vw;
+    height: 50vh;
+    left: 2rem;
+    top: 6.5rem;
+    line-height:4.5rem;
+    position: absolute;
+    opacity: 0;
+    transform: translateY(-100%);
+    visibility: hidden;
+    z-index: 1000;
+    border-radius: 1rem;
+}
+.nav-links li:hover a{
+    color: #0056b3;
+}
+.nav-links li:hover .drop-menu{
+    top: 6.5rem;
+    opacity: 1;
+    visibility: visible;
+    transition:  1s ease-in-out;
+    transform: translateY(0);
+}
+.nav-links li:hover .drop-menu{
+    top: 6.5rem;
+    opacity: 1;
+    visibility: visible;
+    transition:  1s ease-in-out;
+    transform: translateY(0);
+    
+}
+
+
+.drop-menu img:nth-child(3), .drop-menu img:nth-child(5){
+    position: fixed;
+    right: 0;
+
+}
+.checkbtn{
+    font-size: 3rem;
+    color:#0d5be9;
+    float: right;
+    line-height:4.5rem;
+    margin-right: 2rem;  
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+.header-1{
+    flex-basis:40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 0 4rem 0;
+    justify-content:space-evenly;
+}
+.header-1 div{
+    justify-self: flex-end;
+    display: flex;
+    gap: 1rem;
+    
+}
+.header-1 h1{
+    font-weight: 700;
+    font-size: 4.8rem;
+    color: #212529;
+}
+.header-1 h1 img{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.header-1 p{
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: #595959;
+}
+.header-1 a{
+    text-decoration: none;
+    color: #ffffff; 
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+.button3{
+    background-color: #fff;
+    border: 2px solid #0d5be9;
+    border-radius: 100px;
+    padding: 14px 53px;
+    font-size: 12px;
+    display: inline-block;
+}
+.header-2
+{
+    flex-basis: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: relative;
+    height:100;
+    margin: 0 auto;
+}
+.header-2 > img{
+    align-self: flex-end;
+    width: 75%;
+    height: 100%;
+}
+.note-cards{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    height:95%;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.note-cards div{
+    background: white;
+    border-radius:1.2rem;
+}
+.book img, .house img{
+    width: 4.5rem;
+    height: 4.5rem;
+}
+.popover{
+    display: flex;
+    padding: 1rem 1rem;
+}
+.inner1{
+    padding: 1rem;
+}
+.inner1 p{
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #1f1f1f;
+}
+.inner1 span{
+    color: #1865f2;
+    font-weight: 700;
+    font-size: 3rem;
+}
+.note-cards .house1 img{
+    width: 4rem;
+    height: 4rem;
+}
+.book{
+    margin-left: 6rem;
+}
+.house{
+    margin-top: 2rem;
+    align-self: flex-end;
+}
+header .header-2 .house-1{
+    justify-self: flex-end;
+    align-self: flex-start;
+    position: relative;
+    top: 1rem;
+}
+.section-1{
+    width: 100vw;
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    margin: 0 auto; 
+}
+.title{
+    width:50%;
+    font-weight: 600;
+    font-size: 2rem;
+    color: #212529;
+    text-align: center;
+
+}
+.institutions{
+    display: flex;
+    width: 100vw;
+    align-items: center;
+}
+.institutions div img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.section-2{
+    width: 90vw;
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    margin: 2rem auto;
+    
+}
+.advantages{
+    display: flex;
+    padding: 2rem 0;
+    justify-content: space-between;
+}
+.advantages div img, .popover2 div img{
+    width: 4rem;
+    height: 4rem;
+}
+.advantages div h4{
+    font-weight: 600;
+    font-size: 1.8rem;
+}
+.advantages div p{
+    color: #595959;
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+.section-3{
+    width: 100vw;
+    display:flex;
+    background-color: #ececec;
+    padding: 2rem 5rem;
+    gap: 5rem;
+}
+.inner2{
+    padding: 1rem .2rem;
+}
+.inner2 p{
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #1f1f1f;
+}
+.inner2 span,.python-box p:nth-child(4){
+    color: #1db954;
+    font-weight: 700;
+    font-size: 1.6rem;
+}
+
+
+.image-pop{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: relative;
+    padding:0 8rem;
+    height: 100%;
+    flex-basis: 60%;
+}
+.popover2{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    z-index: 999;
+    height: 95%;
+    width: 80%;
+    justify-content: space-between;
+    align-items: flex-start;  
+    top:0; 
+}
+.image-pop >img{
+    height: 100%;
+    width:95%;
+    align-self: flex-end;
+}
+.popover2 >div{
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 1.2rem;
+    padding: .7rem 1.5rem;
+}
+.popover2 div button{
+    font-size: .8rem;
+    font-weight: 400;
+    color:#1865f2;
+    background-color: rgba(24, 101, 242, 0.2);
+    padding: 1em 1rem;
+    border-radius: 2rem;
+}
+.popover2  div:nth-child(2){
+    align-self: flex-end;
+}
+.popover2  div:last-child{
+    position: relative;
+    left: -2rem;    
+}
+
+.image-pop ~div h5{
+    font-size: 2rem;
+    font-weight: 500;
+    color: #0a0a0a;
+    margin: 2rem 0 1rem 0;
+}
+.image-pop ~div p{
+    font-weight: 400;
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}
+.image-pop ~div{
+    flex-basis: 40%;
+}
 
 .section-4{
     display: flex;
     background-color: #fede48;
     width: 99vw;
     padding: 2rem 2rem 1rem 5rem;
-    justify-content: space-between;
+    gap:3rem;
     position: relative;
 }
 .teachers{
     flex-basis: 35%;
-
 }
 .teachers  span{
     font-weight: 700;
     font-size: 1.3rem;
     color:#b02900
 }
-.teachers h3{
+.teachers h3, .section-6 div h4{
     font-size: 2.8rem;
     font-weight: 500;
     color: #0a0a0a;
 }
-.teachers p{
+.teachers p,.section-6 div h3 {
     font-weight: 400;
     font-size: 1.6rem;
     color: #595959;
     padding: 2rem 0;
-
+    
 }
 .teachers .button2{
     font-size: 1.4rem;
@@ -53,6 +408,7 @@ body{
     margin-top: 5rem;
     position: relative;
     flex-basis: 65%;
+    margin: 0 auto;
 }
 .flex-{
     display: flex;
@@ -83,7 +439,7 @@ body{
     display: flex;
     flex-direction: column;
 }
-.flex- div div div h4{
+.flex- div div div h4,.section-5 div:first-child div p:nth-child(2){
     font-weight: 600;
     font-size: 1.2rem;
     color: #212529;
@@ -91,7 +447,7 @@ body{
 .flex- div div div div{
     flex-direction: row;
     align-items: center;
-
+    
 }
 .flex2{
     /* position: absolute; */
@@ -119,6 +475,7 @@ body{
 button{
     outline: none;
     border: none;
+    transition: .6s all ease-in;
 }
 .button1{
     border-radius: 3rem;
@@ -128,30 +485,370 @@ button{
     font-size: 1.2rem;
     padding: 1.4rem 6rem;
 }
+.section-5{
+    margin:0 auto;
+    display: flex;
+    padding: 2rem;
+    background: #1f1f1f;
+    justify-content:center;
+    width: 100vw;
+    padding: 2rem 2rem 1rem 1rem;
+    height: 100%;
+    position: relative;
+    gap: 5rem;
 
+}
+.student-sect{
+    flex-basis: 60%;
+    height: 60%;
+    display: grid;
+    grid-template-areas:
+    'one . .'
+    'one two .'
+    '. two three'
+    ' . . three';
+    position: relative;
+    column-gap: 4rem;
+    
 
+  
+}
+.python-box{
+    background-color: white;
+    border-radius: .8rem;
+    display: flex;
+    align-self: flex-start;
+    flex-direction: column;
+    align-items: center; 
+    padding: 2rem 1.2rem;   
+    text-align: center; 
+}
+.python-box img{
+    width: 8rem;
+    height: 8.2rem;
+}
+.python-box p:nth-child(3),.inner{
+    font-size: 1rem;
+    font-weight: 500;
+    width: max-content;
+    color: #393939;
+}
+.python-box p:nth-child(4){
+    font-size: 1.9rem;
+}
+.one{
+    grid-area:one;
+}
+.two{
+    grid-area: two;
+}
+.three{
+    grid-area:three;
+}
+
+.students{
+    flex-basis: 35%;
+    align-self: center;
+
+}
+.students h3{
+    color: #19a966;
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+.students h4{
+    font-size: 15px;
+    color: #d2d2d2;
+    font-weight: 400;
+}
+.students p{
+    font-size: 2.8rem;
+    font-weight: 500;
+    color: #ffffff;
+    margin: 1rem 0 2rem 0;
+}
+.students button{
+    border: 2px solid white;
+    background-color: #0a0a0a;
+    margin-top: 2rem;
+    color: white;
+
+}
+.section-6{
+    width: 100%;
+    margin: 0 auto;
+    background-color: #ffffff;
+    
+}
+.section-6 div{
+    width: 50%;
+    margin: 1rem auto;
+    text-align: center;
+
+}
+button:hover{
+    scale: 1.1;
+    
+
+}
+@media (max-width:970px){
+    .student-sect{
+        column-gap: 2rem;
+    }
+    .header-1{
+        flex-basis: 45%;
+    }
+    .header-1 div{
+        flex-direction: column;
+    }
+    
+}
 @media (max-width:930px){
+    .header-1{
+        flex-basis: 35%;
+    }
+    .header-2{
+        flex-basis: 65%;
+    }
+    .header-2 > img{
+        align-self: flex-end;
+        width: 75%;
+        height: 100%;
+    }
+    .header-1 h1{
+        font-size: 3.8rem;    
+    }
     .flex- >div{
         padding: 2rem .5rem;
+    }
+    .student-sect{
+        flex-basis: 55%;
     } 
+    .students{
+        flex-basis: 40%;
+    }
+    .section-5{
+         gap: 3rem;
+    }
 }
-@media (max-width:865px){
+@media (max-width:870px){
     .teachers-flex{
         flex-basis: 75%;
     }
+    .header-1 h1{
+        font-size: 2.8rem;    
+    }
+    
 }
-@media (max-width:845px){    
+@media (max-width:845px){  
+    .python-box{
+        padding: 2rem 0;
+    }
     .teachers{
         flex-basis: 25%;
     } 
+    .section-5{
+        gap: 2rem;
+        flex-basis: 50%;
+   }
+   .students{
+        flex-basis: 50%;
+
+   }
 } 
+@media (max-width:765px){
+    .checkbtn{
+        display: block;
+    }
+    .nav-links{
+        position: fixed;
+        width: 95vw ;
+        margin: 0 auto;
+        height: 100vh;
+        background-color:#fff ;
+        z-index: 10;
+        top: 6rem;
+        left: -100%;
+        text-align: center;
+        transition: all .7s ease-in-out;
+    }
+    .nav-links li   {
+        display: block;
+    }
+    #check:checked ~ .nav-links{
+        left :0;
+    }
+    .drop-menu{
+        display: none;
+    }
+}
 @media (max-width:760px) {
+    header{
+        flex-direction: column;
+        height: 100%;
+    }
+    .header-1 div{
+        margin-top: 3rem;
+        flex-direction: row;
+        
+    }
+    .header-1{
+        width: 70vw ;
+        text-align: center;
+    }
+    .header-1,.header-2{
+        flex-basis: 50%;
+        margin: 0 auto;
+    }
+    .header-2{
+        width: 90vw;
+        height: 100px;
+    }
+    .header-2 > img{
+        align-self: center;
+    }
+    .house-1{
+        left:50%;
+        transform: translateX(-50%);
+    }
+    .institutions{
+        display: grid;
+        width: 90vw;
+        grid-template-columns: repeat(2,1fr);
+        margin: 0 auto;
+    }
+    .advantages{
+        gap:.5rem
+    }
+    .section-3{
+        flex-direction: column;
+        margin: 0 auto;
+    }
+    .image-pop{
+        flex-basis: 50%;
+    }
     .section-4{ 
         padding-left: 0;
         flex-direction: column-reverse;
-        align-items: center;
+        width: 99vw;
+        margin:0 auto;
+    }
+    .flex->div{
+        margin: 1rem;
+    }
+    .teachers{
+        width:90%;
+        margin: 0 auto;
+    }
+    .teachers .button2{
+        width: fit-content;
     }
     .teachers-flex{
-        margin-bottom: 2rem;
+        margin-bottom: 2rem;        
     }
+    .section-5{
+        flex-direction: column;
+    }
+    .student-sect{
+        width: 100%;
+        align-self: center;
+
+    }
+    .python-box p:nth-child(3){
+        width: auto;
+    }
+    .python-box .button1, .section-4 button{
+        width:80%;
+        padding: 1rem;
+        
+    }
+    .python-box img{
+        width: 4rem;
+        height: 4rem;
+    }
+    .section-6 div{
+        width: 90%;
+    }
+}
+@media (max-width:530px){
+    .title{
+        width: 90%;
+    }
+    .header-1 div{
+        flex-direction: column;
+    }
+    
+    .flex->div{
+        margin: 1rem;
+    }
+    .flex- div div img,.advantages div img, .popover2 div img{
+        height: 3rem;
+        width: 3rem;
+    }
+    .book{
+        margin-left: 0;
+    }
+    .house-1{
+        left: 50%;
+        transform: translateX(-100%);
+    }
+    .advantages{
+        flex-direction: column;
+        
+    }
+    .popover2{
+        align-self:center;
+        width: 99vw;
+        margin:0 auto;
+    }
+    .popover2  div:nth-child(2){
+        align-self: flex-end;
+        position: relative;
+        top:0rem
+    }
+    .popover2  div:last-child{
+        left:0rem;    
+    }
+    .image-pop img{
+        align-self: center;
+        height: 100%;
+        width: 90vw
+    }
+}
+@media (max-width:480px){
+    .header-2 >img{
+        align-self: center;
+        width:80vw;
+    }
+    .image-pop>img{
+        height: 100%;
+        width: 90vw;
+    }
+    
+    .flex- div div div h4{
+        font-size: 10px;
+    }
+    .inner span{
+        font-size: 8px;
+    }
+    .note-cards{
+        width: 100%;
+    }
+    .header-2 >img{
+        align-self: center;
+        height: 100%;
+        width: 90vw
+    }
+    .note-cards > div:last-child{
+        width: 0;
+        left:100px;
+    }
+    .flex2{
+        left: 0;
+    }
+    .flex-{
+        width: 95vw;
+    }
+    
+
 }

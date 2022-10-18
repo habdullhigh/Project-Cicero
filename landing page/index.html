@@ -1,87 +1,332 @@
-    <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cicero</title>
+    <link rel="icon" href="../images/cicero icon.ico">
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://kit.fontawesome.com/2c1a4fe683.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <section class="section-4">
-        <div class="teachers">
-            <span>FOR TEACHERS</span>
-            <h3>Create and upload questions for different subjects</h3>
-            <p>Prepare by signing up to be a teacher on Cicero uploading question for various subjects assigned to you on Cicero</p>
-            <button class="button2">Explore</button>
+    <nav>
+        <div class="wrapper"  data-aos="fade-right" data-aos-duration="1500">
+            <label class="logo"><a href="./index.html" >Cicero</a></label>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+            <ul class="nav-links">
+                <li><a href="#">Search</a></li>
+                <li><a href="#">Categories
+                    <img src="../images/dropdown icon.png" alt="icon" style="height: 10px; width:10px;"></a>
+                    <div class="drop-menu" id="dropdown">
+                        <img src="../images/side dots.jpg" alt="">
+                        <img src="../images/dots.png" alt="">
+                        <img src="../images/x icon.png" alt="">
+                        <label for="dropdown">
+                            <img src="../images/x icon.png" alt="x">
+                        </label><img src="../images/dots.png" alt=""> 
+                    </div>
+                </li>
+                <li><a href="#">Teachers</a></li>
+                <li><a href="#">Students</a></li>
+                <button class="nav-button">
+                    <a href="../sign up page/index.html" class="reg-link">Register</a>
+                </button>
+            </ul>
+            
+        </div>
+    </nav>
+    <header data-aos="fade-in" data-aos-duration="1000">
+        <div class="header-1" data-aos="slide-up" data-aos-duration="1000">
+            <h1>Welcome to the new way of learning <img src="../images/meditate.png" alt="meditate"></h1>
+            <p>Cicero provides you with questions and answers to prepare you for the various exams you will take at various levels of your education. Grow with Cicero</p>
+            <div>
+                <button class="button1"><a href="../sign up page/index.html">Register</a></button>
+                <button class="button3">Sign in</button>
+            </div>
+        </div>
+        <div class="header-2" data-aos="slide-down" data-aos-duration="1500">
+            <img class="girl" src="../images/bookgirl.png" alt="">
+            <div class="note-cards">
+                <div class="book popover"data-aos='slide-right' data-aos-delay="400">
+                    <img src="../images/book.png" alt="">
+                    <div class="inner1">
+                        <p>Number of Students</p>
+                        <span>2</span> 
+                    </div>
+                </div>
+                <div class="house popover" data-aos="slide-right" data-aos-delay="0">
+                    <img src="../images/house.png" alt="">
+                    <div class="inner1">
+                        <p>Number of Students</p>
+                        <span>2</span> 
+                    </div>
+                </div>
+                <div class="flex- house-1"data-aos="slide-right"data-aos-delay="200"`>
+                    <div>
+                        <div>
+                            <img src="../images/school logo.png" alt="">
+                            <div>
+                                <h4 class="bold-span">Introduction to philosophy</h4>
+                                <div class="inner">
+                                    <span>40 questions</span>
+                                    <code></code>
+                                    <span>4 Hours</span>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="button1">Begin</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="section-1">
+            <div class="title" data-aos="fade-in">
+                <h3>We are trusted by over a thousand Students, teachers, lecturers and parents.</h3>
+            </div>
+            <div class="institutions" data-aos="zoom-in">
+                <div class="cont1" >
+                    <img src="../images/mass.png" alt="">
+                </div>
+                <div class="cont2">
+                    <img src="../images/harvard.png" alt="">
+                </div>
+                <div class="cont3">
+                    <img src="../images/oxford.png" alt="">
+                </div>
+                <div class="cont4">
+                    <img src="../images/cambridge.png" alt="">
+                </div>
+                <div class="cont5">
+                    <img src="../images/stanford.png" alt="">
+                </div>
+                <div class="cont6">
+                    <img src="../images/princeton.png" alt="">
+                </div> 
+            </div>            
+        </section>    
+        <section class="section-2">
+            <div class="title" data-aos="fade-left">
+                <h3 >Prepare extensively for your upcoming questions using our updated question bank.</h3>
+            </div>
+            <div class="advantages" data-aos="zoom-in-up">
+                <div>
+                    <img src="../images/light.png" alt="">
+                    <h4>Questions and Answers</h4>
+                    <p>Get familiar with the various question formarts by practicing</p>
+                </div>
+                <div>
+                    <img src="../images/question.png" alt="">
+                    <h4>Updated Question Bank</h4>
+                    <p>Our questions banks are always updated for theire respective subjects</p>
+                </div>
+                <div>
+                    <img src="../images/grids.png" alt="">
+                    <h4>Intuitive Interface</h4>
+                    <p>Cicero offers an easily navigable interface, making exploring easy.</p>
+                </div>
+            </div>
+            
+        </section>
+        <section class="section-3" data-aos="fade-left">
+            <div class="image-pop" data-aos="zoom-in-up" data-aos-delay="100">                
+                <img src="../images/pencils and clock.png" alt="">
+                <div class="popover2">
+                    <div data-aos="slide-right">
+                        <img src="../images/house.png" alt="">
+                        <div class="inner2">
+                            <p>Philosophy</p>
+                            <span>94%</span></div>
+                        <button>View Result</button>
+                    </div>
+                    <div class="house" data-aos="slide-left>
+                        <img src="../images/house.png" alt="">
+                        <div class="inner2">
+                            <p>Philosophy</p>
+                            <span>94%</span>
+                        </div>
+                        <button>View Result</button>
+                    </div>
+                    <div data-aos="slide-up">
+                        <img src="../images/house.png" alt="">
+                        <div class="inner2">
+                            <p>Philosophy</p>
+                            <span>94%</span>
+                        </div>
+                        <button>View Result</button>
+                    </div>
+                </div>
+            </div>
+            <div  data-aos="fade-left" data-aos-duration="1500">
+                <h5>Cicerohas over a hundred revised and standard questions cutting across over many subjects.</h5>
+                <p>Examinations do not need to be as difficult as they are made to be. At Cicero, we believe in preparation, with our extensive questions, prepare your self for your examinations or tests.</p>
+                <p>With over a thousand questions for each field, we have prepared an intuitive enviroment for you to practice exam related questions in. Welcome toCicero</p>
+            </div>
+        </section>
+        <section class="section-4">
+            <div class="teachers" data-aos="fade-left" data-aos-duration="1500">
+                <span>FOR TEACHERS</span>
+                <h3>Create and upload questions for different subjects</h3>
+                <p>Prepare by signing up to be a teacher on Cicero uploading question for various subjects assigned to you on Cicero</p>
+                <button class="button2">Explore</button>
+            </div>
+            <div class="teachers-flex">
+                <article class="flex1 flex-" data-aos="slide-right">
+                    <div>
+                        <div>
+                            <img src="../images/school logo.png" alt="">
+                            <div>
+                                <h4 class="bold-span">Introduction to philosophy</h4>
+                                <div class="inner">
+                                    <span>40 questions</span>
+                                    <code></code>
+                                    <span>4 Hours</span>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="button1">Begin</button>
+                    </div>
+                    <div>
+                        <div>
+                            <img src="../images/school logo.png" alt="">
+                            <div>
+                                <h4 class="bold-span">Introduction to philosophy</h4>
+                                <div class="inner">
+                                    <span>40 questions</span><code></code>
+                                    <span>4 Hours</span>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="button1">Begin</button>
+                    </div>                
+                        
+                </article>
+                <br>
+                <article class="flex2 flex-" data-aos="slide-left">
+                    <div>
+                        <div>
+                            <img src="../images/school logo.png" alt="">
+                            <div>
+                                <h4 class="bold-span">Introduction to philosophy</h4>
+                                <div class="inner">
+                                    <span>40 questions</span>
+                                    <code></code>
+                                    <span>4 Hours</span>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="button1">Begin</button>
+                    </div>
+                    <div class="end">
+                        <div >
+                            <img src="../images/school logo.png" alt="">
+                            <div>
+                                <h4 class="bold-span">Introduction to philosophy</h4>
+                                <div class="inner">
+                                    <span>40 questions</span>
+                                    <code></code>
+                                    <span>4 Hours</span>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="button1">Begin</button>
+                    </div>
+                </article>    
+            </div>
+        </section>
+        <section class="section-5" data-aos="fade-in">
+            <div class="student-sect">
+                <div class="python-box one" data-aos="slide-down">
 
+                    <img src="../images/cicero 1.jpg" alt="">
+                    <p>Zeus</p>
+                    <p>Basics Of Python Programming</p>
+                    <p>94%</p>
+                    <button class="button1">Begin</button>
+                </div>
+    
+                <div class="python-box two" data-aos="slide-down" >
+                    <img src="../images/cicero 1.jpg" alt="">
+                    <p>Akin Aguda</p>
+                    <p>Basics Of Python Programming</p>
+                    <p>94%</p>
+                    <button class="button1">Begin</button>
+                </div>
+    
+                <div class="python-box three" data-aos="slide-down" >
+                    <img src="../images/cicero 1.jpg" alt="">
+                    <p>Akin Aguda</p>
+                    <p>Basics Of Python Programming</p>
+                    <p>94%</p>
+                    <button class="button1">Begin</button>
+                </div>
+            </div>  
+            <div class="students" data-aos="fade-left" data-aos-duration="1500"> 
+                <h3>FOR STUDENTS</h3>
+                <P>Find relatable subjects as you prepare for your examinations</P>
+                <h4>Cicero helps you get into the minds of examiners as you practice with well seasoned questions and see the annswers  </h4>
+                <button class="button3">Explore</button>
+            </div>
+        </section>
+    
+        <section class="section-6" data-aos="zoom-in-out">
+            <div dadata-aos="fade-in">
+                <h4>Are you ready to begin your learning adventure</h4>
+                <h3>Join us today for access to numerous questions and answers in various topics to help prepare you for your next examination. </h3>
+                <button class="button1">Register</button>
+            </div>
+        </section>
+    </main>
+    <!-- <footer>
+        <div>
+            <h3>Cicero</h3>
+            <h4>Expanding the reach of education by providing easy access to test questions.</h4>
         </div>
-        <div class="teachers-flex">
-            <article class="flex1 flex-"`>
-                <div>
-                    <div>
-                        <img src="../images/school logo.png" alt="">
-                        <div>
-                            <h4 class="bold-span">Introduction to philosophy</h4>
-                            <div class="inner">
-                                <span>40 questions</span>
-                                <code></code>
-                                <span>4 Hours</span>
-                            </div>
-                        </div>
-                    </div>
-                    <button class="button1">Begin</button>
-                </div>
-                <div>
-                    <div>
-                        <img src="../images/school logo.png" alt="">
-                        <div>
-                            <h4 class="bold-span">Introduction to philosophy</h4>
-                            <div class="inner">
-                                <span>40 questions</span>
-                                <code></code>
-                                <span>4 Hours</span>
-                            </div>
-                        </div>
-                    </div>
-                    <button class="button1">Begin</button>
-                </div>                
-                    
-            </article>
-            <br>
-            <article class="flex2 flex-"`>
-                <div>
-                    <div>
-                        <img src="../images/school logo.png" alt="">
-                        <div>
-                            <h4 class="bold-span">Introduction to philosophy</h4>
-                            <div class="inner">
-                                <span>40 questions</span>
-                                <code></code>
-                                <span>4 Hours</span>
-                            </div>
-                        </div>
-                    </div>
-                    <button class="button1">Begin</button>
-                </div>
-                <div class="end">
-                    <div >
-                        <img src="../images/school logo.png" alt="">
-                        <div>
-                            <h4 class="bold-span">Introduction to philosophy</h4>
-                            <div class="inner">
-                                <span>40 questions</span>
-                                <code></code>
-                                <span>4 Hours</span>
-                            </div>
-                        </div>
-                    </div>
-                    <button class="button1">Begin</button>
-                </div>
-            </article>    
+        <div>
+            <ul>
+                <h3>Company</h3>
+                <li>Services</li>
+                <li>Pricing</li>
+                <li>Resources</li>
+                <li>Blogs</li>
+                <li>FAQs</li>
+            </ul>
         </div>
-    </section>
+    
+        <div>
+            <h3>Legal</h3>
+            <ul>
+                <li>Privacy Policy</li>
+                <li>Terms and Conditions</li>
+                <li>Contact</li>
+            </ul>
+        </div>
+    
+        <div>
+            <h3>Support</h3>
+            <ul>
+                <li>09032210788</li>
+                <li>okekejohnpaul12@gmail.com</li>
+                <li></li>
+            </ul>
+        </div>
+    </footer> -->
+        
 
     
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+      duration:1000;
+      easing: 'ease-in-out';
+    </script>
 </body>
 </html>
+                
+   

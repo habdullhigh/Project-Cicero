@@ -5,12 +5,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register</title>
+    <link rel="icon" href="../images/cicero icon.ico">
     <link rel="stylesheet" href="../login page/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://kit.fontawesome.com/2c1a4fe683.js" crossorigin="anonymous"></script>    
 </head>
 <body>
     <nav>
-        <br>
-        <br>
+        <div class="wrapper"  data-aos="fade-right" data-aos-duration="1500">
+            <label class="logo"><a href="../landing page/index.html" >Cicero</a></label>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+            <ul class="nav-links">
+                <li><a href="#">Search</a></li>
+                <li><a href="#">Categories
+                    <img src="../images/dropdown icon.png" alt="icon" style="height: 10px; width:10px;"></a>
+                    <div class="drop-menu" id="dropdown">
+                        <img src="../images/side dots.jpg" alt="">
+                        <img src="../images/dots.png" alt="">
+                        <img src="../images/x icon.png" alt="">
+                        <label for="dropdown">
+                            <img src="../images/x icon.png" alt="x">
+                        </label><img src="../images/dots.png" alt=""> 
+                    </div>
+                </li>
+                <li><a href="#">Teachers</a></li>
+                <li><a href="#">Students</a></li>
+                <button class="nav-button">
+                    <a href="../login page/index.html" class="reg-link">Login</a>
+                </button>
+            </ul>
+            
+        </div>
     </nav>
     <section class="login-body">
         <div class="side-note">
@@ -30,11 +58,16 @@
                 <br>
                 <input type="password" class="input" id="password_" placeholder="Password" required><br>
                 <br>
-                <input type="submit" value="Register" class="login">
+                <input type="submit" value="Register" class="login blue-face">
             </form>
-            <p class="register-link">Already have an account? <a href="../login page/index.html">Login</a></p>
+            <p class="register-link ">Already have an account? <a href="../login page/index.html">Login</a></p>
         </div>
     </section>
-
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+      duration:2000;
+      easing: 'ease-in-out';
+    </script>
 </body>
 </html>

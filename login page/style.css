@@ -8,42 +8,175 @@
 html{
     font-size: 10px;
 }
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+nav{
+    width: 100%;
+    height: 6.5rem;
+}
+.reg-link{
+    color: white;
+    text-decoration: none;
+}
+.logo a{
+    color: #0056b3;
+    text-decoration: none;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 6.5rem;
+
+}
+.nav-button{
+    
+    border: none;
+    border-radius: 3rem;
+    background-color: #0d5be9;
+    color: white;
+    font-weight: 500;
+    font-size: 1.2rem;
+    padding: 1.2rem 5.5rem;
+}
+.wrapper{
+    width: 95%;
+    height: 4.5rem;
+    margin: 0 auto;
+    z-index: 1000;
+}
+.wrapper .nav-links{
+    float: right    ;
+    
+}
+.nav-links li{
+    list-style: none;
+    display: inline-block;
+    line-height: 6.5rem;
+}
+.nav-links li a{
+    color: #1f1f1f;
+    font-size: 1.6rem;
+    font-weight: 500;
+    padding: 1rem 1.5rem;
+    text-decoration: none;
+    transition: all 0.5s ease;
+}
+.nav-links .drop-menu{
+    background-color: #fff;
+    position: fixed;
+    width: 95vw;
+    height: 50vh;
+    left: 2rem;
+    top: 6.5rem;
+    line-height:4.5rem;
+    position: absolute;
+    opacity: 0;
+    transform: translateY(-100%);
+    visibility: hidden;
+    z-index: 10000;
+    border-radius: 1rem;
+}
+.nav-links li:hover a{
+    color: #0056b3;
+}
+.nav-links li:hover .drop-menu{
+    top: 6.5rem;
+    opacity: 1;
+    visibility: visible;
+    transition:  1s ease-in-out;
+    transform: translateY(0);
+}
+.nav-links li:hover .drop-menu{
+    top: 6.5rem;
+    opacity: 1;
+    visibility: visible;
+    transition:  1s ease-in-out;
+    transform: translateY(0);
+    
+}
+.drop-menu img:nth-child(3), .drop-menu img:nth-child(5){
+    position: fixed;
+    right: 0;
+
+}
+.checkbtn{
+    font-size: 3rem;
+    color:#0d5be9;
+    float: right;
+    line-height:4.5rem;
+    margin-right: 2rem;  
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+
+.blue-face{
+    margin-top: 1rem;
+    padding: 1rem 4rem;
+    border-radius: 30px;
+    background-color: #0d5be9;
+    color: #fff!important;
+    font-weight: 500;
+    font-size: 13px!important;
+    text-decoration: none;
+    outline: none;
+    border:none;
+    transition: all ease 1s;
+}
 
 .login-body{
     display: flex;
     width: 90%;
     position: relative;
-    margin-top: 2rem;
     justify-content: center;
     margin: 0 auto;
-    margin-top: 2rem;
-
+    margin-top: 5rem;
+    z-index: 1;
 }
 .login-body a{
     text-decoration: none;
 }
 .side-note{
-    background-color: #212529;
+    background-color: #515b60;
     padding: 3rem 1rem;
     color: white;
-    flex-basis: 40%;
+    flex-basis: 50%;
+    padding: 8rem;
+    transition: all ease-in 1s;
+    
+}
+.side-note  p{
+    font-weight: 500;
+    font-size: 2.8rem;
+}
+.p-right +p{
+    font-weight: 400;
+    font-size: 1.5rem;
+    margin-top: 3rem;
 }
 .side-note .p-right{
     margin: 1rem 0;
     text-align: right;
+    font-weight: 700;
+    font-size: 1.6rem;
 
 }
 .login-form{
     display: flex;
     flex-direction: column;
-    background-color: rgba(0,0, 0, 0.1);
+    background-color:#ecf2ff;
     align-items: center;
-    padding: 2rem 2rem 0rem 2rem;
-    flex-basis: 40%;
+    padding: 6rem 5rem 4rem 5rem;
+    flex-basis: 50%;
+    font-weight: 400;
 }
 
-.login-body input, p{
+.login-body input, p
+{
     margin: 1rem ;
+    
 }
 .google-login{
     display: flex;
@@ -54,18 +187,26 @@ html{
     border-radius: 2rem;
     padding: .5em 2em;
     width: 100%;
+    color: #0056b3;
+    font-size: 1.4rem;  
 }
-.login{
-    background-color: rgb(45, 93, 197);
-    border-radius: 2rem;
-    padding: .5rem 3em;
-    color: white;
+.google-login +p{
+    font-weight: 500;
+    font-size: 14px;
+}
+.register-link{
+    font-size: 1.5rem;
 }
 .input{
     width: 100%;
     padding: 1rem;
     border-radius: 1rem ;
+    border: transparent;
+    outline: none;
+    font-weight: 400;
+    font-size: 1.4rem;
 }
+
 form{
     display: flex;
     flex-direction: column;
@@ -73,7 +214,45 @@ form{
     align-items: center;
     padding: none;
 }
-
+button:hover,.blue-face:hover{
+    scale:1.1
+}
+@media (max-width:1045px){
+    .side-note{
+        padding: 8rem 5rem;
+    }
+} 
+@media (max-width:1045px){
+    .side-note{
+        padding: 7rem 3rem;
+    }
+}  
+@media (max-width:765px){
+    .checkbtn{
+        display: block;
+    }
+    .nav-links{
+        position: fixed;
+        width: 95vw ;
+        margin: 0 auto;
+        height: 100vh;
+        background-color:#fff ;
+        z-index: 10;
+        top: 6rem;
+        left: -100%;
+        text-align: center;
+        transition: all .7s ease-in-out;
+    }
+    .nav-links li   {
+        display: block;
+    }
+    #check:checked ~ .nav-links{
+        left :0;
+    }
+    .drop-menu{
+        display: none;
+    }
+}     
 @media (max-width:700px){
     .side-note{
         display: none;
